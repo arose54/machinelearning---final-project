@@ -218,9 +218,7 @@ deleteNaNs(data_dict_wo_total,'bonus')
 deleteNaNs(data_dict_wo_total,'total_payments')
 deleteNaNs(data_dict_wo_total,'total_stock_value')
 
-#### Deleting these values brought precision and recall down to 0. I worried that it was the NaNs
-#### distorting the non-POI values, but deleting them actuallys worsens the non-poi precision by .2, 
-#### while only increasing the non-poi recall by .08. On the other side it knocks the poi precision and recall to 0s.
+#### It did!
 
 my_dataset = data_dict_wo_total 
 
